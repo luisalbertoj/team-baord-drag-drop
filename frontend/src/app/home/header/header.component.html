@@ -1,0 +1,33 @@
+<mat-toolbar class="bgHeader">
+  <ul>
+    <a *ngIf="_userService.loggedIn()" routerLink="listTask">List task</a>
+  </ul>
+  <ul>
+    <a *ngIf="_userService.loggedIn()" routerLink="saveTask">Create task</a>
+  </ul>
+  <ul>
+    <mat-form-field
+      *ngIf="_userService.loggedIn() && _userService.isAdmin()"
+      appearance="fill"
+    >
+      <mat-label>Choose an admin option</mat-label>
+      <mat-select>
+        <mat-option value="option1" routerLink="listUser">Users</mat-option>
+        <mat-option value="option2" routerLink="listRole">Role</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </ul>
+  <span class="headerSpacer"></span>
+  <ul>
+    <a *ngIf="!_userService.loggedIn()" mat-button routerLink="signUp"
+      >Sign Up</a
+    >
+    <a *ngIf="!_userService.loggedIn()" mat-button routerLink="login">Login</a>
+    <a
+      *ngIf="_userService.loggedIn()"
+      mat-button
+      (click)="_userService.logout()"
+      >Logout</a
+    >
+  </ul>
+</mat-toolbar>

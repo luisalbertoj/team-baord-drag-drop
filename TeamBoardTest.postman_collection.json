@@ -1,0 +1,1252 @@
+{
+	"info": {
+		"_postman_id": "5bccaa8f-8ebc-47be-9302-30e389b864be",
+		"name": "TeamBoardTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TEST 1 - ROLE",
+			"item": [
+				{
+					"name": "http://localhost:3001/api/role/registerRole",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"user\",\r\n    \"description\": \"Regular user of the app\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/role/registerRole",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"role",
+								"registerRole"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/role/registerRole",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"admin\",\r\n    \"description\": \"App administrator user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/role/registerRole",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"role",
+								"registerRole"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/role/listRole",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/role/listRole",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"role",
+								"listRole"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/role/updateRole",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"6121e4b13b17f151e8294dbc\",\r\n    \"description\": \"Common user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/role/updateRole",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"role",
+								"updateRole"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TEST 2 - USER",
+			"item": [
+				{
+					"name": "http://localhost:3001/api/user/registerUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Pepita Perla\",\r\n    \"email\": \"pepitaperla@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/registerUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"registerUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/registerUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Pepito Perez\",\r\n    \"email\": \"pepitoperez@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/registerUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"registerUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/registerUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Juanito Jaramillo\",\r\n    \"email\": \"juanitojaramillo@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/registerUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"registerUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/registerUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Juanita Jimenez\",\r\n    \"email\": \"juanitajimenez@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/registerUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"registerUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/listUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/user/listUsers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"listUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/listUser/Pepita",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/user/listUsers/Pep",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"listUsers",
+								"Pep"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/listUser/Jua",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/user/listUsers/J",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"listUsers",
+								"J"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/listUsers/Juanita",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/user/listUsers/Juanita",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"listUsers",
+								"Juanita"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/auth/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"juanitojaramillo@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/updateUser",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"6121d3872a85c13f4865d55d\",\r\n    \"name\": \"Juanito alimaña\",\r\n    \"email\": \"juanitojaramillo@gmail.com\",\r\n    \"password\": \"5678\",\r\n    \"roleId\": \"6121cd67e115e448fcd855ed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/updateUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/auth/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"juanitojaramillo@gmail.com\",\r\n    \"password\": \"5678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/updateUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"6121d3872a85c13f4865d55d\",\r\n    \"name\": \"Juanito alimaña\",\r\n    \"email\": \"juanitojaramillo@gmail.com\",\r\n    \"password\": \"\",\r\n    \"roleId\": \"6121cd67e115e448fcd855ed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/updateUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/deleteUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"_id\": \"6121d3872a85c13f4865d55d\",\r\n \"dbStatus\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/deleteUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"deleteUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TEST 3 - BOARD",
+			"item": [
+				{
+					"name": "http://localhost:3001/api/user/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"juanitajimenez@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/board/saveTask",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4OTJhODVjMTNmNDg2NWQ1NjEiLCJuYW1lIjoiSnVhbml0YSBKaW1lbmV6Iiwicm9sZUlkIjoiNjEyMWNkNjdlMTE1ZTQ0OGZjZDg1NWVkIiwiaWF0IjoxNjI5NjA4NzUxfQ.ct2_5Eak5g4Q6bPAK2NlwvEehHOXehpf2I6g8VFmcIY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Crear modulo role en app\",\r\n    \"description\": \"CRUD de role\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/board/saveTask",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"board",
+								"saveTask"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/board/saveTask",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4OTJhODVjMTNmNDg2NWQ1NjEiLCJuYW1lIjoiSnVhbml0YSBKaW1lbmV6Iiwicm9sZUlkIjoiNjEyMWNkNjdlMTE1ZTQ0OGZjZDg1NWVkIiwiaWF0IjoxNjI5NjA4NzUxfQ.ct2_5Eak5g4Q6bPAK2NlwvEehHOXehpf2I6g8VFmcIY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Crear modulo user en app\",\r\n    \"description\": \"CRUD de user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/board/saveTask",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"board",
+								"saveTask"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"pepitoperez@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/board/saveTask",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4NDJhODVjMTNmNDg2NWQ1NTkiLCJuYW1lIjoiUGVwaXRvIFBlcmV6Iiwicm9sZUlkIjoiNjEyMWNkNjdlMTE1ZTQ0OGZjZDg1NWVkIiwiaWF0IjoxNjI5NjA4OTQwfQ.Cwal91oxAcvU3NXz3SwqLeQS0j2VfK-80DdSkOQ-qqk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Crear proyecto front en Angular\",\r\n    \"description\": \"/frontend\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/board/saveTask",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"board",
+								"saveTask"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/board/listTask",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4OTJhODVjMTNmNDg2NWQ1NjEiLCJuYW1lIjoiSnVhbml0YSBKaW1lbmV6Iiwicm9sZUlkIjoiNjEyMWNkNjdlMTE1ZTQ0OGZjZDg1NWVkIiwiaWF0IjoxNjI5NjA5MDg1fQ.0fSvkxNEHSl68-O-G0g9nY5RnzS_ZFKHfbK9vixnczQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/board/listTask",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"board",
+								"listTask"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/board/updateTask",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4OTJhODVjMTNmNDg2NWQ1NjEiLCJuYW1lIjoiSnVhbml0YSBKaW1lbmV6Iiwicm9sZUlkIjoiNjEyMWNkNjdlMTE1ZTQ0OGZjZDg1NWVkIiwiaWF0IjoxNjI5NjA5MDg1fQ.0fSvkxNEHSl68-O-G0g9nY5RnzS_ZFKHfbK9vixnczQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"_id\": \"6121dbb06a03d33410ad2542\",\r\n   \"taskStatus\": \"done\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/board/updateTask",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"board",
+								"updateTask"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/board/deleteTask/611c0f4660e6f546fcf8f1c2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4OTJhODVjMTNmNDg2NWQ1NjEiLCJuYW1lIjoiSnVhbml0YSBKaW1lbmV6Iiwicm9sZUlkIjoiNjEyMWNkNjdlMTE1ZTQ0OGZjZDg1NWVkIiwiaWF0IjoxNjI5NjA5MDg1fQ.0fSvkxNEHSl68-O-G0g9nY5RnzS_ZFKHfbK9vixnczQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/board/deleteTask/6121db676a03d33410ad253f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"board",
+								"deleteTask",
+								"6121db676a03d33410ad253f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TEST 4 - ADMIN",
+			"item": [
+				{
+					"name": "http://localhost:3001/api/user/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"pepitaperla@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/registerAdmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4MjJhODVjMTNmNDg2NWQ1NTUiLCJuYW1lIjoiUGVwaXRhIFBlcmxhIiwicm9sZUlkIjoiNjEyMWNkNzJlMTE1ZTQ0OGZjZDg1NWYwIiwiaWF0IjoxNjI5NjEwNDQxfQ.Yfa2Nk_ygZdiYdaA9dnWqPCA_-O2gTMqPM5Q6NZqUNg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Beethoven\",\r\n    \"email\": \"Beethoven@gmail.com\",\r\n    \"password\": \"1234\",\r\n    \"roleId\": \"6121cd72e115e448fcd855f0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/registerAdmin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"registerAdmin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/updateUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4MjJhODVjMTNmNDg2NWQ1NTUiLCJuYW1lIjoiUGVwaXRhIFBlcmxhIiwicm9sZUlkIjoiNjEyMWNkNzJlMTE1ZTQ0OGZjZDg1NWYwIiwiaWF0IjoxNjI5NjEwNDQxfQ.Yfa2Nk_ygZdiYdaA9dnWqPCA_-O2gTMqPM5Q6NZqUNg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"6121e1de3b17f151e8294da0\",\r\n    \"name\": \"Beethoven 2\",\r\n    \"email\": \"Beethoven@gmail.com\",\r\n    \"password\": \"\",\r\n    \"roleId\": \"6121cd67e115e448fcd855ed\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/updateUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/deleteUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4MjJhODVjMTNmNDg2NWQ1NTUiLCJuYW1lIjoiUGVwaXRhIFBlcmxhIiwicm9sZUlkIjoiNjEyMWNkNzJlMTE1ZTQ0OGZjZDg1NWYwIiwiaWF0IjoxNjI5NjEwNDQxfQ.Yfa2Nk_ygZdiYdaA9dnWqPCA_-O2gTMqPM5Q6NZqUNg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"_id\": \"6121e1de3b17f151e8294da0\",\r\n \"dbStatus\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/user/deleteUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"deleteUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/listUsers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4MjJhODVjMTNmNDg2NWQ1NTUiLCJuYW1lIjoiUGVwaXRhIFBlcmxhIiwicm9sZUlkIjoiNjEyMWNkNzJlMTE1ZTQ0OGZjZDg1NWYwIiwiaWF0IjoxNjI5NjEwNDQxfQ.Yfa2Nk_ygZdiYdaA9dnWqPCA_-O2gTMqPM5Q6NZqUNg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/user/listUsers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"listUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/listUsers/p",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4MjJhODVjMTNmNDg2NWQ1NTUiLCJuYW1lIjoiUGVwaXRhIFBlcmxhIiwicm9sZUlkIjoiNjEyMWNkNzJlMTE1ZTQ0OGZjZDg1NWYwIiwiaWF0IjoxNjI5NjEwNDQxfQ.Yfa2Nk_ygZdiYdaA9dnWqPCA_-O2gTMqPM5Q6NZqUNg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/user/listUsers/p",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"listUsers",
+								"p"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/user/listUsers/Juanita",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4MjJhODVjMTNmNDg2NWQ1NTUiLCJuYW1lIjoiUGVwaXRhIFBlcmxhIiwicm9sZUlkIjoiNjEyMWNkNzJlMTE1ZTQ0OGZjZDg1NWYwIiwiaWF0IjoxNjI5NjEwNDQxfQ.Yfa2Nk_ygZdiYdaA9dnWqPCA_-O2gTMqPM5Q6NZqUNg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/user/listUsers/Juanita",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"user",
+								"listUsers",
+								"Juanita"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/role/registerRole",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4MjJhODVjMTNmNDg2NWQ1NTUiLCJuYW1lIjoiUGVwaXRhIFBlcmxhIiwicm9sZUlkIjoiNjEyMWNkNzJlMTE1ZTQ0OGZjZDg1NWYwIiwiaWF0IjoxNjI5NjEwNDQxfQ.Yfa2Nk_ygZdiYdaA9dnWqPCA_-O2gTMqPM5Q6NZqUNg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"test\",\r\n    \"description\": \"test of the app\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/role/registerRole",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"role",
+								"registerRole"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/role/listRole",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4MjJhODVjMTNmNDg2NWQ1NTUiLCJuYW1lIjoiUGVwaXRhIFBlcmxhIiwicm9sZUlkIjoiNjEyMWNkNzJlMTE1ZTQ0OGZjZDg1NWYwIiwiaWF0IjoxNjI5NjEwNDQxfQ.Yfa2Nk_ygZdiYdaA9dnWqPCA_-O2gTMqPM5Q6NZqUNg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/api/role/listRole",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"role",
+								"listRole"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/role/updateRole",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4MjJhODVjMTNmNDg2NWQ1NTUiLCJuYW1lIjoiUGVwaXRhIFBlcmxhIiwicm9sZUlkIjoiNjEyMWNkNzJlMTE1ZTQ0OGZjZDg1NWYwIiwiaWF0IjoxNjI5NjEwNDQxfQ.Yfa2Nk_ygZdiYdaA9dnWqPCA_-O2gTMqPM5Q6NZqUNg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\": \"6121e4b13b17f151e8294dbc\",\r\n    \"description\": \"test of the app edit\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/role/updateRole",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"role",
+								"updateRole"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TEST 5 - IMG",
+			"item": [
+				{
+					"name": "http://localhost:3001/api/board/saveTaskImg",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4MjJhODVjMTNmNDg2NWQ1NTUiLCJuYW1lIjoiUGVwaXRhIFBlcmxhIiwicm9sZUlkIjoiNjEyMWNkNzJlMTE1ZTQ0OGZjZDg1NWYwIiwiaWF0IjoxNjI5NjEwNDQxfQ.Yfa2Nk_ygZdiYdaA9dnWqPCA_-O2gTMqPM5Q6NZqUNg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "\"Tarea con img\"",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "\"guardar img\"",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Sanchez/Downloads/600_485843098.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/board/saveTaskImg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"board",
+								"saveTaskImg"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/api/board/saveTaskImg",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTIxZDM4MjJhODVjMTNmNDg2NWQ1NTUiLCJuYW1lIjoiUGVwaXRhIFBlcmxhIiwicm9sZUlkIjoiNjEyMWNkNzJlMTE1ZTQ0OGZjZDg1NWYwIiwiaWF0IjoxNjI5NjEwNDQxfQ.Yfa2Nk_ygZdiYdaA9dnWqPCA_-O2gTMqPM5Q6NZqUNg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "\"Tarea sin imagen\"",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "\"Prueba sin imagen\"",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/board/saveTaskImg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"board",
+								"saveTaskImg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+  background-image: url("../src/assets/img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.style-snackBarTrue {
+  background-color: #568003;
+  color: #ffffff;
+}
+.style-snackBarFalse {
+  background-color: #810505;
+  color: #ffffff;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+#footer {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  background-color: #383d38;
+  text-align: center;
+  color: #cecccc;
+  padding: 30px;
+  bottom: 0;
+  left: 0;
+}

@@ -1,0 +1,58 @@
+<div class="bgComponent">
+  <div class="container">
+    <div class="example-button-container">
+      <button mat-mini-fab class="button" routerLink="/registerUser">
+        New user
+      </button>
+    </div>
+    <mat-form-field class="bgShearch">
+      <mat-label>search User</mat-label>
+      <input
+        matInput
+        (keyup)="applyFilter($event)"
+        placeholder="Ex. Pepita"
+        #input
+      />
+    </mat-form-field>
+
+    <div class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource" matSort>
+        <ng-container matColumnDef="NAME">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>NAME</th>
+          <td mat-cell *matCellDef="let row">{{ row.name }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="EMAIL">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>EMAIL</th>
+          <td mat-cell *matCellDef="let row">{{ row.email }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="ACTIONS">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>ACTIONS</th>
+          <td mat-cell *matCellDef="let row">
+            <mat-icon class="colorUpdate updateIcon" (click)="updateUser(row)"
+              >border_color</mat-icon
+            >
+            <mat-icon class="colorDelete deleteIcon" (click)="deleteUser(row)"
+              >delete_forever</mat-icon
+            >
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+
+        <tr class="mat-row" *matNoDataRow>
+          <td class="mat-cell" colspan="4">
+            No user found "{{ input.value }}"
+          </td>
+        </tr>
+      </table>
+
+      <mat-paginator
+        [pageSizeOptions]="[5, 10, 15]"
+        showFirstLastButtons
+      ></mat-paginator>
+    </div>
+  </div>
+</div>
